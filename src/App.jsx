@@ -1,21 +1,27 @@
-import './App.css'
+import Header from './components/Header'
+import Hero from './components/Hero'
+import Services from './components/Services'
+import HowItWorks from './components/HowItWorks'
+import Benefits from './components/Benefits'
+import Gallery from './components/Gallery'
+import Pricing from './components/Pricing'
+import About from './components/About'
+import CTA from './components/CTA'
+import Footer from './components/Footer'
 
 export default function App() {
   return (
-    <div className="app">
-      <header className="header">
-        <div className="logo">CliqTru</div>
-        <nav>
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
-        </nav>
-      </header>
-
-      <main className="hero">
-        <h1>Welcome to <span className="brand">CliqTru</span></h1>
-        <p>Your foundation is ready. Tell us what to build next.</p>
-      </main>
-    </div>
+    <>
+      <Header />
+      <Hero />
+      <Services />
+      <HowItWorks />
+      <Benefits />
+      <Gallery />
+      <Pricing />
+      <About />
+      <CTA />
+      <Footer />
+    </>
   )
 }

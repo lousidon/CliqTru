@@ -1,64 +1,34 @@
-.app {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.25rem 2rem;
-  border-bottom: 1px solid #27272a;
-}
-
-.logo {
-  font-size: 1.25rem;
+/* Global shared styles used across components */
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+  padding: 0.875rem 2rem;
+  border-radius: 8px;
   font-weight: 700;
-  color: var(--primary);
-  letter-spacing: -0.5px;
-}
-
-nav {
-  display: flex;
-  gap: 1.5rem;
-}
-
-nav a {
-  color: var(--muted);
+  font-size: 1rem;
   text-decoration: none;
-  font-size: 0.9rem;
-  transition: color 0.2s;
+  transition: background 0.2s, transform 0.2s;
+  display: inline-block;
 }
 
-nav a:hover {
+.btn-primary:hover {
+  background: var(--primary-dark);
+  transform: translateY(-1px);
+}
+
+.btn-ghost {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
   color: var(--text);
+  padding: 0.875rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.2s;
+  display: inline-block;
 }
 
-.hero {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  text-align: center;
-  padding: 4rem 2rem;
-}
-
-.hero h1 {
-  font-size: clamp(2rem, 6vw, 4rem);
-  font-weight: 800;
-  letter-spacing: -1px;
-  line-height: 1.1;
-}
-
-.brand {
-  color: var(--primary);
-}
-
-.hero p {
-  color: var(--muted);
-  font-size: 1.1rem;
-  max-width: 480px;
+.btn-ghost:hover {
+  background: rgba(255,255,255,0.08);
 }
